@@ -41,10 +41,10 @@ export const printUserInfo = ({
 // REQS: use rest parameters
 //  getSum(1, 2, 3) === 6
 //  getSum(1, 2, 3, 4, 5) === 15
-export const getSum = (...rest) => {
+export const getSum = (...nums) => {
   let sum = 0
-  for (let i of rest) {
-    sum += i
+  for (let num of nums) {
+    sum += num
   }
   return sum
 }
